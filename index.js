@@ -1,4 +1,4 @@
-import SpacePunksTokenABI from './alien_frens.js';
+import AlienFrensTokenABI from './alien_frens.js';
 
 document.addEventListener("DOMContentLoaded", () => {
   const web3 = new Web3(window.ethereum)
