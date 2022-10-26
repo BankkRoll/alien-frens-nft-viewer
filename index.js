@@ -22,11 +22,11 @@ document.addEventListener("DOMContentLoaded", () => {
 
       const tokenMetadata = await fetch(tokenMetadataURI).then((response) => response.json())
 
-      const spacePunkTokenElement = document.getElementById("nft_template").content.cloneNode(true)
-      spacePunkTokenElement.querySelector("h1").innerText = tokenMetadata["name"]
-      spacePunkTokenElement.querySelector("a").href = `https://opensea.io/assets/0x123b30E25973FeCd8354dd5f41Cc45A3065eF88C/${tokenId}`
-      spacePunkTokenElement.querySelector("img").src = tokenMetadata["image"]
-      spacePunkTokenElement.querySelector("img").alt = tokenMetadata["description"]
+      const AlienFrensTokenElement = document.getElementById("nft_template").content.cloneNode(true)
+      AlienFrensTokenElement.querySelector("h1").innerText = tokenMetadata["name"]
+      AlienFrensTokenElement.querySelector("a").href = `https://opensea.io/assets/0x123b30E25973FeCd8354dd5f41Cc45A3065eF88C/${tokenId}`
+      AlienFrensTokenElement.querySelector("img").src = tokenMetadata["image"]
+      AlienFrensTokenElement.querySelector("img").alt = tokenMetadata["description"]
 
       document.getElementById("nfts").append(AlienFrensTokenElement)
     }
